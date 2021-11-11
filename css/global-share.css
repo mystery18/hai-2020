@@ -1,0 +1,205 @@
+.global-share {
+  position: relative;
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  background: #ffffff;
+  position: fixed;
+  bottom: 235px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 26px;
+  color: #9a9a9a;
+  cursor: pointer;
+  z-index: 12;
+  line-height: 1;
+}
+@media (max-width: 1200px) {
+  .global-share {
+    display: none;
+  }
+}
+.global-share .pic {
+  padding-top: 3px;
+  height: 100%;
+}
+.global-share .pic > .iconfont {
+  font-size: 18px;
+}
+.global-share:hover .pic {
+  color: #333;
+}
+.global-share:hover .pop-up-layer {
+  display: block;
+}
+.global-share .pop-up-layer {
+  display: none;
+  padding-right: 20px;
+  position: absolute;
+  right: 39px;
+  top: -63px;
+}
+.global-share .pop-up-layer .con {
+  position: relative;
+  padding: 15px 20px;
+  min-width: 190px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
+}
+.global-share .pop-up-layer .con:after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  top: 50%;
+  width: 17px;
+  height: 106px;
+  margin-top: -53px;
+  background: url("../images/shanjiaoxing.png") no-repeat center;
+}
+.global-share .pop-up-layer .con h3 {
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5;
+  text-align: left;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 2px;
+}
+.global-share .pop-up-layer .con .box {
+  padding-top: 10px;
+}
+.global-share .pop-up-layer .con .box .left {
+  width: 70px;
+  float: left;
+  display: none;
+}
+.LANG-cn .global-share .pop-up-layer .con .box .left {
+  display: block;
+}
+.global-share .pop-up-layer .con .box .left .share {
+  margin-bottom: 0;
+}
+.global-share .pop-up-layer .con .box .left .share .wechat-qrcode {
+  height: auto;
+  width: 100%;
+  position: static;
+  display: block;
+  box-shadow: none;
+}
+.global-share .pop-up-layer .con .box .left .share h4,
+.global-share .pop-up-layer .con .box .left .share .help,
+.global-share .pop-up-layer .con .box .left .share .icon-share-wechat {
+  display: none;
+}
+.global-share .pop-up-layer .con .box .left .share .qrcode {
+  width: 100%;
+  margin: 0;
+}
+.global-share .pop-up-layer .con .box .left .share .qrcode img {
+  width: 100%;
+  display: block;
+}
+.global-share .pop-up-layer .con .box .right {
+  width: 100%;
+  float: left;
+}
+.LANG-cn .global-share .pop-up-layer .con .box .right {
+  width: 80px;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component {
+  font-size: 0;
+  text-align: right;
+  margin-top: -10px;
+  margin: -10px -5px 0;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component .text {
+  display: none;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component .social-share-icon {
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  background: #ffffff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 12;
+  line-height: 1;
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  float: right;
+  padding-top: 3px;
+  -webkit-transition: none;
+  transition: none;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component .social-share-icon:hover {
+  text-decoration: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component .social-share-icon .iconfont {
+  font-size: 22px;
+  color: #9a9a9a;
+  background: transparent;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  margin: 0;
+  text-decoration: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component .social-share-icon .iconfont:hover {
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component .social-share-icon::before {
+  display: none;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component .icon-email {
+  padding-top: 6px;
+}
+.global-share .pop-up-layer .con .box .right .share .share-component .iconfont.icon-share-email {
+  font-size: 16px;
+}
+.global-share .pop-up-layer .con .copy-link {
+  font-size: 12px;
+  line-height: 25px;
+  height: 28px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-transition: 0s;
+  transition: 0s;
+  position: relative;
+}
+.global-share .pop-up-layer .con .copy-link:hover {
+  color: #333;
+}
+.global-share .pop-up-layer .con .copy-link .success {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  display: none;
+}
+.global-share .pop-up-layer .con .copy-link .success span {
+  font-size: 12px;
+  display: inline-block;
+  padding: 4px 6px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  line-height: 1;
+}

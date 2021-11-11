@@ -1,0 +1,125 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+li,
+ul,
+ol {
+  list-style: none;
+}
+a,
+a:hover,
+a:focus,
+a:visited {
+  cursor: pointer;
+  text-decoration: none;
+  outline-style: none;
+}
+.clearfix:after,
+.cistern:after {
+  display: table;
+  clear: both;
+  content: ' ';
+}
+a,
+i {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+.cistern {
+  max-width: 1340px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+@media (max-width: 1600px) {
+  .cistern {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+body {
+  font-family: ebg-font-regular, Arial;
+  font-size: 16px;
+  color: #666;
+  background: #fff;
+}
+.LANG-cn body {
+  font-family: Microsoft YaHei, Arial;
+}
+.LANG-tr body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .ebg-font-light {
+  font-family: ebg-font-light, Arial;
+}
+body .ebg-font-regular {
+  font-family: ebg-font-regular, Arial;
+}
+body .ebg-font-bold {
+  font-family: ebg-font-bold, Arial;
+  font-weight: normal;
+}
+.LANG-cn body .ebg-font-light,
+.LANG-cn body .ebg-font-regular,
+.LANG-cn body .ebg-font-bold {
+  font-family: Microsoft YaHei, Arial;
+}
+.LANG-cn body .ebg-font-bold {
+  font-weight: bold;
+}
+.LANG-tr body .ebg-font-light,
+.LANG-tr body .ebg-font-regular,
+.LANG-tr body .ebg-font-bold {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.LANG-tr body .ebg-font-bold {
+  font-weight: bold;
+}
+.LANG-sa body {
+  text-align: right !important;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+.position-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.lazyload {
+  position: relative;
+}
+.lazyload img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.lazyload:after {
+  padding-top: 56.37254902%;
+  content: "";
+  width: 100%;
+  display: block;
+}
